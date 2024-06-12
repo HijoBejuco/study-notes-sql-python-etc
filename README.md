@@ -4,34 +4,38 @@
 - <a href="#sql_arrays">Arrays on SQL</a>
 
 
+l
+
+l
+lll
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+l
+l
+l
+l
+l
+l
+l
+l
+ll
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
 
 
 
