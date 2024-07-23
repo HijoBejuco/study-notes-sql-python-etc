@@ -67,6 +67,11 @@ Here we assign to the variable "example_function", the new functionalities of th
 
 
 
+## ARRAYS IN BIGQUERY AND SQL
+
+### ARRAY_AGG:
+This is an Aggregating function, so it aggregates all the values using a group by clause. It takes different rows and transform them into a single row of ARRAY datatype. 
+
 
 
 
