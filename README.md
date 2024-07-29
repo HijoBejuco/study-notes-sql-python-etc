@@ -93,7 +93,11 @@ This is an Aggregating function, so it aggregates all the values using a group b
 ### The linear unit
 This is the fundamental component of a NN. The individual neuron. A neuron with one input looks like: 
 ![individual neuron](images/individual_neuron.png)
+The input is x,the connection to the network has a weighy w, whenever the input flows through a connection, the value is multiplied by the weight. A NN "learns" by modifying its weights.
 
+**b** is a special weight called the bias, this has not any input., thats why, The bias enables the neuron to modify the output independently of it's inputs. 
+
+**y** is the output of the neuron. The neuron sums up all the values it recieves through its connections. The neuron's activation is: ***y=wx+b*** (This is just the equation of a line)
 
 
 
