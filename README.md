@@ -9,7 +9,7 @@
 
 
 <details>
-  <summary>Tabla de contenidos</summary>
+  <!--<summary>Tabla de contenidos</summary>-->
   <ol><!-- Etiqueta de lista ordenada -->
     <li>
       <a href="#python-decorators">Python decorators</a>
@@ -21,14 +21,10 @@
       <a href="#python-decorators">Python decorators</a>
     </li>
     <li>
-      <a href="deep-learning">Deep learning</a>
+      <a href="#deep-learning">Deep learning</a>
     </li>
   </ol>
 </details>
-
-
-
-
 
 
 ## Python decorators
@@ -86,13 +82,18 @@ Here we assign to the variable "example_function", the new functionalities of th
 
 
 
-## ARRAYS IN BIGQUERY AND SQL
+## Arrays in bigquery and sql
 
 ### ARRAY_AGG:
 This is an Aggregating function, so it aggregates all the values using a group by clause. It takes different rows and transform them into a single row of ARRAY datatype. 
 
 
 ## Deep learning
+
+### The linear unit
+This is the fundamental component of a NN. The individual neuron. A neuron with one input looks like: 
+![individual neuron](images/individual_neuron.png)
+
 
 
 
