@@ -8,6 +8,25 @@
 ## Arrays on SQL
 
 
+<details>
+  <summary>Tabla de contenidos</summary>
+  <ol><!-- Etiqueta de lista ordenada -->
+    <li>
+      <a href="#python-decorators">Python decorators</a>
+      <ul>
+        <li><a href="#explaining-code-of-decorators">Explaining code of decorators</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#python-decorators">Python decorators</a>
+    </li>
+    <li>
+      <a href="deep-learning">Deep learning</a>
+    </li>
+  </ol>
+</details>
+
+
 
 
 
@@ -49,7 +68,7 @@ def example_function(n):
 result = example_function(1000000)
 print(f"Result: {result}")
 ```
-#### Explaining the code of decorators
+#### Explaining code of decorators
 timer_decorator returns the wrapper function (**returns the reference to wrapper**), but do not calls it. This means that we can create a variable to assign to the timer_decorator and consequently use that variable as it was the wrapper function. 
 
 For example, in the following code, we assing timer_decorator to a variable called "var" and then we can use "var" as it was the function wrapper. 
@@ -71,6 +90,10 @@ Here we assign to the variable "example_function", the new functionalities of th
 
 ### ARRAY_AGG:
 This is an Aggregating function, so it aggregates all the values using a group by clause. It takes different rows and transform them into a single row of ARRAY datatype. 
+
+
+## Deep learning
+
 
 
 
