@@ -23,6 +23,9 @@
     <li>
       <a href="#deep-learning">Deep learning</a>
     </li>
+    <li>
+      <a href="#gunicorn">Gunicorn</a>
+    </li>
   </ol>
 </details>
 
@@ -98,6 +101,26 @@ The input is x,the connection to the network has a weighy w, whenever the input 
 **b** is a special weight called the bias, this has not any input., thats why, The bias enables the neuron to modify the output independently of it's inputs. 
 
 **y** is the output of the neuron. The neuron sums up all the values it recieves through its connections. The neuron's activation is: ***y=wx+b*** (This is just the equation of a line)
+
+
+## Gunicorn
+Gunicorn is a program that handles receiving requests from users on the internet (like when you open a web page) and passes those requests to an application written in Python (for example, a website that was programmed in Python).
+
+Then, the Python application generates a response (such as displaying a web page) and Gunicorn takes care of sending it back to the user.
+
+Why do you need Gunicorn? When you program something in Python, it normally runs from the terminal (console), and only you can use it. If you want others to be able to use your program (for example, through a web browser or an API), you need a server that listens to user requests and communicates with your application. This is where Gunicorn comes into play.
+
+Gunicorn is the bridge that allows anyone to access your Python application through a browser or a mobile app, instead of only from your computer.
+
+Real-life example: Imagine you have a small store. You are the one in charge of receiving customers and attending to their orders, but you can only help one person at a time. If more people arrive, you can’t assist them all at once.
+
+Now, Gunicorn would be like hiring a team of employees (called "workers") who help you attend to several people at the same time, which makes your store run better and faster, even if a lot of people show up.
+
+Your Python program is the store. Gunicorn is the team of employees that helps the store run smoothly and serve many customers at the same time. The customers are the users who want to access your website or application.
+
+What happens without Gunicorn? If you don’t use something like Gunicorn and simply run your Python program in basic mode, only one person at a time would be able to use your application. This is fine if only you are using it, but it won’t work for most web applications that need to serve many people at once.
+
+Summary: Gunicorn is like a "server" that makes your Python application available for others to use, just like a website. It helps your application run efficiently, even when many people are trying to access it at the same time. If in the future you’re developing an application or service in Python and want it to be available to many people, Gunicorn allows you to do this in a simple and efficient way.
 
 
 
