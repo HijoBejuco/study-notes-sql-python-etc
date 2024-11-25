@@ -26,6 +26,9 @@
     <li>
       <a href="#gunicorn">Gunicorn</a>
     </li>
+    <li>
+      <a href="#chain-rule-and-backpropagation">Chain rule and backpropagation</a>
+    </li>
   </ol>
 </details>
 
@@ -124,6 +127,6 @@ Summary: Gunicorn is like a "server" that makes your Python application availabl
 
 
 
-
+## Chain rule and backpropagation
 
 
