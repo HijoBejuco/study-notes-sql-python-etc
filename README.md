@@ -130,6 +130,6 @@ Summary: Gunicorn is like a "server" that makes your Python application availabl
 ## Chain rule and backpropagation
 
 Here are some notes on how to perform Backpropagation when a Neural network is being optimized
-![Backpropagation notes](images/Backpropagation1.png)
-![Backpropagation notes 2](images/Backpropagation2.png)
+![Backpropagation notes](images/Backpropagation1.jpg)
+![Backpropagation notes 2](images/Backpropagation2.jpg)
 
