@@ -14,7 +14,9 @@
     <li>
       <a href="#python-decorators">Python decorators</a>
       <ul>
-        <li><a href="#explaining-code-of-decorators">Explaining code of decorators</a></li>
+        <li>
+          <a href="#explaining-code-of-decorators">Explaining code of decorators</a>
+        </li>
       </ul>
     </li>
     <li>
@@ -22,13 +24,19 @@
     </li>
     <li>
       <a href="#deep-learning">Deep learning</a>
+      <ul>
+        <li>
+          <a href="#chain-rule-and-backpropagation">Chain rule and backpropagation</a>
+        </li>
+        <li>
+          <a href="#rag-retrieval-augmented-generation">RAG Retrieval Augmented Generation</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="#gunicorn">Gunicorn</a>
     </li>
-    <li>
-      <a href="#chain-rule-and-backpropagation">Chain rule and backpropagation</a>
-    </li>
+
   </ol>
 </details>
 
@@ -105,6 +113,16 @@ The input is x,the connection to the network has a weighy w, whenever the input 
 
 **y** is the output of the neuron. The neuron sums up all the values it recieves through its connections. The neuron's activation is: ***y=wx+b*** (This is just the equation of a line)
 
+### Chain rule and backpropagation
+
+Here are some notes on how to perform Backpropagation when a Neural network is being optimized
+![Backpropagation notes](images/Backpropagation1.jpg)
+![Backpropagation notes 2](images/Backpropagation2.jpg)
+
+
+### RAG Retrieval Augmented Generation
+* The motivations for RAG is to feed an LLM with private data, so it has a better understanding of a specific topic.
+* 
 
 ## Gunicorn
 Gunicorn is a program that handles receiving requests from users on the internet (like when you open a web page) and passes those requests to an application written in Python (for example, a website that was programmed in Python).
@@ -127,9 +145,5 @@ Summary: Gunicorn is like a "server" that makes your Python application availabl
 
 
 
-## Chain rule and backpropagation
 
-Here are some notes on how to perform Backpropagation when a Neural network is being optimized
-![Backpropagation notes](images/Backpropagation1.jpg)
-![Backpropagation notes 2](images/Backpropagation2.jpg)
 
