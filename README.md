@@ -2,18 +2,27 @@
 
 ## Index
 <!--<summary>Tabla de contenidos</summary>-->
-<ol><!-- Etiqueta de lista ordenada -->
-  <li>
+<ol><!-- Tag for ordered list -->
+  <li><!-- list item -->
     <a href="#python-decorators">Python decorators</a>
-    <ul>
+    <ul><!-- Tag for unordered list -->
       <li>
         <a href="#explaining-code-of-decorators">Explaining code of decorators</a>
       </li>
     </ul>
   </li>
+
   <li>
-    <a href="#python-decorators">Python decorators</a>
+    <a href="#statistics">Statistics</a>
+    <ul>
+      <li>
+        <a href="#causal-inference-and-causation">causal inference and causation</a>
+      </li>
+    </ul>
   </li>
+
+
+
   <li>
     <a href="#deep-learning">Deep learning</a>
     <ul>
@@ -91,6 +100,53 @@ Here we assign to the variable "example_function", the new functionalities of th
 
 ### ARRAY_AGG:
 This is an Aggregating function, so it aggregates all the values using a group by clause. It takes different rows and transform them into a single row of ARRAY datatype. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Statistics
+
+### **causal inference and causation**
+
+
+* Machine learning is based on *predictive inference*, which is very different from causal inference. The first one is based on correlation and the other on causation.
+* But ML can be used in some cases as a tool for studying causalities (Causal ML)
+
+#### **Predictive inference:**
+This is the prediction based on correlations like ML, here we predict something, based on the values of other variables. Here que objective is predict the objective variable the best we can. 
+
+#### **Causal inference:**
+aims to measure the value of the outcome when you change the value of something else, everything else equal. 
+
+Here the quality of the prediction is not the most important objective, it's possible to have a valid causal model, with low predictive power, because it can just explain a little variance of the phenomena. 
+
+**Counterfactual** is the world where we don't make the intervention, so we can compare both worlds (the one with intervention and the one without)
+* The comparison with the 2 worlds is the **Causal effect**
+
+
+**References of this section:**
+* [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
+* 
+
+
 
 
 ## Deep learning
