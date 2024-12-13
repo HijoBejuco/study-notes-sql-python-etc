@@ -1,44 +1,35 @@
 # Notes on studying SQL, Python, etc 🚀🌀🌿
 
 ## Index
-- <a href="#sql_arrays">Arrays on SQL</a>
+<!--<summary>Tabla de contenidos</summary>-->
+<ol><!-- Etiqueta de lista ordenada -->
+  <li>
+    <a href="#python-decorators">Python decorators</a>
+    <ul>
+      <li>
+        <a href="#explaining-code-of-decorators">Explaining code of decorators</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#python-decorators">Python decorators</a>
+  </li>
+  <li>
+    <a href="#deep-learning">Deep learning</a>
+    <ul>
+      <li>
+        <a href="#chain-rule-and-backpropagation">Chain rule and backpropagation</a>
+      </li>
+      <li>
+        <a href="#rag-retrieval-augmented-generation">RAG Retrieval Augmented Generation</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#gunicorn">Gunicorn</a>
+  </li>
+</ol>
 
-
-<a name=sql_arrays></a>
-## Arrays on SQL
-
-
-<details>
-  <!--<summary>Tabla de contenidos</summary>-->
-  <ol><!-- Etiqueta de lista ordenada -->
-    <li>
-      <a href="#python-decorators">Python decorators</a>
-      <ul>
-        <li>
-          <a href="#explaining-code-of-decorators">Explaining code of decorators</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#python-decorators">Python decorators</a>
-    </li>
-    <li>
-      <a href="#deep-learning">Deep learning</a>
-      <ul>
-        <li>
-          <a href="#chain-rule-and-backpropagation">Chain rule and backpropagation</a>
-        </li>
-        <li>
-          <a href="#rag-retrieval-augmented-generation">RAG Retrieval Augmented Generation</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#gunicorn">Gunicorn</a>
-    </li>
-
-  </ol>
-</details>
 
 
 ## Python decorators
