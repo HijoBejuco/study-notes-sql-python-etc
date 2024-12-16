@@ -144,7 +144,8 @@ Here the quality of the prediction is not the most important objective, it's pos
 **Counterfactual example**
 * Imagine you have a headache, then you take a pill, and later, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one world you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
 
-![counterfactual_example1](images/statistics/counterfactual_example_1.jpg)
+
+<img src="images/statistics/counterfactual_example_1.jpg" alt="counterfactual_example1" width="200" height="120">
 
 * So because pure counterfactual is impossible, causal inference uses *randomized experiments* to approximate a counterfactual. If you randomize the treatment allocation (pill vs. placebo), the only systematic difference is the treatment, and hence a statistically significant difference in outcome can be attributed to the treatment.
 
