@@ -133,7 +133,7 @@ This is an Aggregating function, so it aggregates all the values using a group b
 #### **Predictive inference:**
 Prediction based on correlations like ML, here we predict something, based on the values of other variables. Here the objective is to predict the objective variable the best we can. 
 
-#### **Causal inference:**
+#### **Causal inference**
 aims to measure the value of the outcome when you change the value of something else, everything else equal. 
 
 Here the quality of the prediction is not the most important objective, it's possible to have a valid causal model, with low predictive power, because it can just explain a little variance of the phenomena. 
@@ -145,14 +145,21 @@ Here the quality of the prediction is not the most important objective, it's pos
 * Imagine you have a headache, then you take a pill, and later, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one world you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
 
 
-<img src="images/statistics/counterfactual_example_1.jpg" alt="counterfactual_example1" width="200" height="120">
+<img src="images/statistics/counterfactual_example_1.jpg" alt="counterfactual_example1" width="250" height="150">
 
 * So because pure counterfactual is impossible, causal inference uses *randomized experiments* to approximate a counterfactual. If you randomize the treatment allocation (pill vs. placebo), the only systematic difference is the treatment, and hence a statistically significant difference in outcome can be attributed to the treatment.
+
+* Note, we can measure causal effects with observational data, instead of randomized experiments. 
+
+#### **Why correlation does not imply causation?**
+From the following image, we can say that the correlation between drowning and ice cream sales is just due a common cause: weather. There is not causal link between drowning and ice cream sales. This is called a *spurious correlation*
+
+
 
 
 
 **References of this section:**
-* [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
+* Basically all the amazing visualizations and theories of this section are taken from: [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
 * 
 
 
