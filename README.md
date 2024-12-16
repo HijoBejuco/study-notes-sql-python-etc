@@ -152,8 +152,13 @@ Here the quality of the prediction is not the most important objective, it's pos
 * Note, we can measure causal effects with observational data, instead of randomized experiments. 
 
 #### **Why correlation does not imply causation?**
-From the following image, we can say that the correlation between drowning and ice cream sales is just due a common cause: weather. There is not causal link between drowning and ice cream sales. This is called a *spurious correlation*
+From the following image, we can say that the correlation between drowning and ice cream sales is due a common cause: weather. There is not causal link between drowning and ice cream sales. This is what we call a *spurious correlation*.
 
+Also, there is an effect of education on performance, but cognitiva capacity affects both. So, here, the positive correlation between education and job performance is confounded with the effect of cognitive capacity.
+
+<img src="images/statistics/correlation_vs_causation.jpg" alt="correlation_vs_causation" width="250" height="120">
+
+**Mediators:** In ML, features are selected based on their predictive power. However, in causal inference, certain features (confounders/common causes) must be included regardless of their predictive power or statistical significance, because the objective here is to assess how those features affect the predicting variable. Conversely, mediators, which represent indirect causal pathways, should not be included as they prevent measuring the total causal effect. Thus, *the inclusion of features in causal inference depends on the assumed causal relationships between variables*.
 
 
 
