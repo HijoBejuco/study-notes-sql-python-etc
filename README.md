@@ -131,15 +131,18 @@ This is an Aggregating function, so it aggregates all the values using a group b
 * But ML can be used in some cases as a tool for studying causalities (Causal ML)
 
 #### **Predictive inference:**
-This is the prediction based on correlations like ML, here we predict something, based on the values of other variables. Here que objective is predict the objective variable the best we can. 
+Prediction based on correlations like ML, here we predict something, based on the values of other variables. Here the objective is to predict the objective variable the best we can. 
 
 #### **Causal inference:**
 aims to measure the value of the outcome when you change the value of something else, everything else equal. 
 
 Here the quality of the prediction is not the most important objective, it's possible to have a valid causal model, with low predictive power, because it can just explain a little variance of the phenomena. 
 
-**Counterfactual** is the world where we don't make the intervention, so we can compare both worlds (the one with intervention and the one without)
+**Counterfactual:** is the world where we don't make the intervention, so we can compare both worlds (the one with intervention and the one without)
 * The comparison with the 2 worlds is the **Causal effect**
+
+**Counterfactual example**
+* Imagine you have a headache, then you take a pill, and after a while, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor or combination of factors helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
 
 
 **References of this section:**
