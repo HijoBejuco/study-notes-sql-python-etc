@@ -142,14 +142,15 @@ Here the quality of the prediction is not the most important objective, it's pos
 * The comparison with the 2 worlds is the **Causal effect**
 
 **Counterfactual example**
-* Imagine you have a headache, then you take a pill, and later, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one world you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
+
+Imagine you have a headache, then you take a pill, and later, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one world you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
 
 
 <img src="images/statistics/counterfactual_example_1.jpg" alt="counterfactual_example1" width="250" height="150">
 
-* So because pure counterfactual is impossible, causal inference uses *randomized experiments* to approximate a counterfactual. If you randomize the treatment allocation (pill vs. placebo), the only systematic difference is the treatment, and hence a statistically significant difference in outcome can be attributed to the treatment.
+So because pure counterfactual is impossible, causal inference uses *randomized experiments* to approximate a counterfactual. If you randomize the treatment allocation (pill vs. placebo), the only systematic difference is the treatment, and hence a statistically significant difference in outcome can be attributed to the treatment.
 
-* Note, we can measure causal effects with observational data, instead of randomized experiments. 
+* Note, we can measure causal effects with observational data, instead of randomized experiments. For more info, go [here](https://towardsdatascience.com/the-science-and-art-of-causality-part-1-5d6fb55b7a7c)
 
 #### **Why correlation does not imply causation?**
 From the following image, we can say that the correlation between drowning and ice cream sales is due a common cause: weather. There is not causal link between drowning and ice cream sales. This is what we call a *spurious correlation*.
@@ -168,6 +169,12 @@ Imagine interpreting the positive association between ice cream sales and drowni
 
 
 Another example: During pandemic, a French "expert" used a graph to argue that lockdowns were counterproductive, showing a positive correlation between lockdown stringency and Covid-related deaths. However, this was likely due to reverse causation: countries imposed strict measures when deaths were high. Proper analysis, controlling for confounders, showed that lockdowns had a strong negative effect on the number of cases and deaths.
+
+#### **How can causal and predictive inference be used together?**
+Companies use ML to solve the prediction problem of recommending products to clients. However, to understand the effect of the recommendation system on sales or conversions, causal inference is needed. This involves conducting  andomized experiments (A/B testing) to determine the impact accurately. 
+* tests evaluating both scenarios, when ML is used and when dont, and with this information, performing statistical tests to see whether ML improve conversion. 
+
+
 
 **References of this section:**
 * Basically all the amazing visualizations and theories of this section are taken from: [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
