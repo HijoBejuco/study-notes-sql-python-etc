@@ -160,8 +160,14 @@ Also, there is an effect of education on performance, but cognitiva capacity aff
 
 **Mediators:** In ML, features are selected based on their predictive power. However, in causal inference, certain features (confounders/common causes) must be included regardless of their predictive power or statistical significance, because the objective here is to assess how those features affect the predicting variable. Conversely, mediators, which represent indirect causal pathways, should not be included as they prevent measuring the total causal effect. Thus, *the inclusion of features in causal inference depends on the assumed causal relationships between variables*.
 
+<img src="images/statistics/mediators.jpg" alt="mediators" width="270" height="170">
+
+#### **Why is it problematic to use ML for inferring causal effects?**
+
+Imagine interpreting the positive association between ice cream sales and drowning accidents as causal. You might want to ban ice cream at all costs. But of course, that would have potentially little to no effect on the outcome.
 
 
+Another example: During pandemic, a French "expert" used a graph to argue that lockdowns were counterproductive, showing a positive correlation between lockdown stringency and Covid-related deaths. However, this was likely due to reverse causation: countries imposed strict measures when deaths were high. Proper analysis, controlling for confounders, showed that lockdowns had a strong negative effect on the number of cases and deaths.
 
 **References of this section:**
 * Basically all the amazing visualizations and theories of this section are taken from: [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
