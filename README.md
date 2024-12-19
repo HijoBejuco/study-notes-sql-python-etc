@@ -47,7 +47,7 @@
 ## Mathematics
 
 ### Two dimensional discrete dynamical systems
-
+In this kind of systems, *there is a function that takes 2 numbers as input *
 
 
 
