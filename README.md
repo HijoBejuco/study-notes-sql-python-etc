@@ -268,7 +268,7 @@ str_chain.invoke({"topic": "beets"})
 # Equivalent to:
 # str_chain = joke_prompt | chat_model | StrOutputParser()
 ```
-#### Guide generation with context
+#### Generation with context
 Its very usefull to pass data into the llm, so it learns on private data we've injected, and then we make questions. 
 
 See the following example:
