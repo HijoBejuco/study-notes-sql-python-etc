@@ -36,6 +36,9 @@
       <li>
         <a href="#rag-retrieval-augmented-generation">RAG Retrieval Augmented Generation</a>
       </li>
+      <li>
+        <a href="#generative-ai-with-LangChain">Generative ai with LangChain</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -219,9 +222,18 @@ Here are some notes on how to perform Backpropagation when a Neural network is b
 ![Backpropagation notes 2](images/Backpropagation2.jpg)
 
 
+### Generative ai with LangChain
+* First of all, we need to configure how we will make calls to a LLM, this is basically to configure an API key of a LLM. 
+
+
+
 ### RAG Retrieval Augmented Generation
 * The motivations for RAG is to feed an LLM with private data, so it has a better understanding of a specific topic.
 * 
+
+
+
+
 
 ## Gunicorn
 Gunicorn is a program that handles receiving requests from users on the internet (like when you open a web page) and passes those requests to an application written in Python (for example, a website that was programmed in Python).
