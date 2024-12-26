@@ -9,6 +9,14 @@
       <li>
         <a href="#two-dimensional-discrete-dynamical-systems">Two dimensional discrete dynamical systems</a>
       </li>
+      <li>
+        <a href="#differential-equations">Differential equations</a>
+        <ul>
+          <li>
+            <a href="#computational-solutions">Computational solutions</a>
+          </li>       
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
@@ -54,6 +62,11 @@
 
 ### Two dimensional discrete dynamical systems
 In this kind of systems, *there is a function that takes 2 numbers as input *
+
+### Differential equations
+
+#### Computational solutions
+
 
 
 
