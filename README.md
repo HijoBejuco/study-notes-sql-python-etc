@@ -269,6 +269,30 @@ str_chain.invoke({"topic": "beets"})
 # str_chain = joke_prompt | chat_model | StrOutputParser()
 ```
 #### Guide generation with context
+Its very usefull to pass data into the llm, so it learns on private data we've injected, and then we make questions. 
+
+See the following example:
+```python
+SOURCE = """
+Old Ship Saloon 2023 quarterly revenue numbers:
+Q1: $174782.38
+Q2: $467372.38
+Q3: $474773.38
+Q4: $389289.23
+"""
+
+rag_prompt = ChatPromptTemplate.from_messages([
+    ("system", 'You are a helpful assistant. Use the following context when responding:\n\n{context}.'),
+    ("human", "{question}")
+])
+
+rag_chain = rag_prompt | chat_model | StrOutputParser()
+
+rag_chain.invoke({
+    "question": "What was the Old Ship Saloon's total revenue in Q1 2023?",
+    "context": SOURCE
+})
+```
 
 **References of this section:**
 * [Here](https://www.freecodecamp.org/news/beginners-guide-to-langchain/)
