@@ -222,8 +222,60 @@ Here are some notes on how to perform Backpropagation when a Neural network is b
 ![Backpropagation notes 2](images/Backpropagation2.jpg)
 
 
+
 ### Generative ai with LangChain
-* First of all, we need to configure how we will make calls to a LLM, this is basically to configure an API key of a LLM. 
+First of all, we need to configure how we will make calls to a LLM, this is basically to configure an API key of a LLM. To see this, into this repository: *deep_learning/generative_ai_with_longchain_gen_ai_notebook.ipynb*
+
+#### Prompt templates
+this templates are used for parametrize inputs, so we don´t repeat them. We use the class **ChatPrompTemplate** to do so. 
+
+Here we set the instruction that the llm is a comedian, and then as a human, we ask it to tell a joke. 
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+
+joke_prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are a world class comedian."),
+    ("human", "Tell me a joke about {topic}")
+])
+```
+
+Then, we can format the prompt, using the .invoke method, so it tells us a joke about beets. 
+```python
+joke_prompt.invoke({"topic": "beets"})
+```
+
+#### Chaining
+The prompt template and the chat model implement the .invoke() method, so they are both LangChain *Runnable* objects
+
+We can joint runnables into **chains**, using the pipe operator, where we .invoke() the next runnable with the output of the previous one. 
+
+```python
+chain = joke_prompt | chat_model
+```
+The resulting chain is itself a runnable, so it has the .invoke() method. 
+
+```python
+chain.invoke({"topic": "beets"})
+```
+If we want yo work with the raw output of the llm, so we have to use the output parser. 
+
+```python
+from langchain_core.output_parsers import StrOutputParser
+str_chain = chain | StrOutputParser()
+str_chain.invoke({"topic": "beets"})
+
+# Equivalent to:
+# str_chain = joke_prompt | chat_model | StrOutputParser()
+```
+#### Guide generation with context
+
+**References of this section:**
+* [Here](https://www.freecodecamp.org/news/beginners-guide-to-langchain/)
+* 
+
+
+
 
 
 
