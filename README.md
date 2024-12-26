@@ -12,10 +12,13 @@
     </ul>
   </li>
   <li>
-    <a href="#python-decorators">Python decorators</a>
+    <a href="#programming">Programming</a>
     <ul>
       <li>
-        <a href="#explaining-code-of-decorators">Explaining code of decorators</a>
+        <a href="#python-decorators">Python decorators</a>
+      </li>
+      <li>
+        <a href="#pydantic-for-data-validation">Pydantic for data validation</a>
       </li>
     </ul>
   </li>
@@ -61,8 +64,8 @@ In this kind of systems, *there is a function that takes 2 numbers as input *
 
 
 
-
-## Python decorators
+## Programming
+### Python decorators
 A decorator is a function that modifies the behavior of another function or method. Can be created using @ and they are used for code reuse and to add general functionalities to methods/functions.
 
 The following code shows how to create a simple decorator which only calculates how much time takes to excecute a function. 
@@ -114,6 +117,12 @@ When we apply a decorator to a function using the @, it is equivalent to do the 
 example_function = timer_decorator(example_function) 
 ```
 Here we assign to the variable "example_function", the new functionalities of the decorator, so this means that after the function is decorated, when we use the example_function function, **WE ARE CALLING THE *wrapper* function** instead of the original one. 
+
+
+
+
+### Pydantic for data validation
+
 
 
 
