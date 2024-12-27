@@ -28,6 +28,9 @@
       <li>
         <a href="#pydantic-for-data-validation">Pydantic for data validation</a>
       </li>
+      <li>
+        <a href="#web-development">Web development</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -136,8 +139,9 @@ Here we assign to the variable "example_function", the new functionalities of th
 
 ### Pydantic for data validation
 
+### Web development
 
-
+🎲 For a more detailed doccumentation on web development, go to my GitHub repo where I construct a complete web page which is a complete videogame: [**HERE**](https://github.com/HijoBejuco/video-game-development)
 
 ## Arrays in bigquery and sql
 
