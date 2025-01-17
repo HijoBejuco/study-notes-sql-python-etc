@@ -14,7 +14,7 @@
         <ul>
           <li>
             <a href="#computational-solutions">Computational solutions</a>
-          </li>       
+          </li>
         </ul>
       </li>
     </ul>
@@ -349,7 +349,7 @@ rag_chain.invoke({
 
 ### RAG Retrieval Augmented Generation
 * The motivations for RAG is to feed an LLM with private data, so it has a better understanding of a specific topic.
-* 
+* Notebook for creating a RAG using LangChain is here: *deep_learning/generative_ai_with_langchain/rag_notebook.ipynb*
 
 
 
