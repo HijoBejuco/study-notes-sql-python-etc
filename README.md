@@ -31,6 +31,9 @@
       <li>
         <a href="#web-development">Web development</a>
       </li>
+      <li>
+        <a href="#ax-method-for-plotting">ax method for plotting</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -126,6 +129,52 @@ Here we assign to the variable "example_function", the new functionalities of th
 ### Web development
 
 🎲 For a more detailed doccumentation on web development, go to my GitHub repo where I construct a complete web page which is a complete videogame: [**HERE**](https://github.com/HijoBejuco/video-game-development)
+
+### ax method for plotting
+
+Here a basic example for plotting multiple sub-plots using ax method
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Datos de ejemplo
+data = {
+    'segmentos': ['A', 'B', 'A', 'B', 'A', 'B'],
+    'ingresos_2024': [100, 200, 150, 250, 120, 220],
+    'ingresos_2025': [110, 210, 160, 260, 130, 230]
+}
+
+# Crear DataFrame
+df = pd.DataFrame(data)
+
+# Crear una figura y ejes con coordenadas ax[0,0] y ax[1,0]
+# Here we create the structure of the basic plot. whether
+# we want to create a matrix of plots, or just one column,
+# or just one row or an n x n plot. In this case, we just
+# need 2 rows and 1 column (2, 1) matrix.
+fig, ax = plt.subplots(2, 1)
+
+# Plotear boxplot para ingresos_2024 en ax[0,0]
+# Here we assign the data we are plotting on each sub-plot
+df.boxplot(column='ingresos_2024', by='segmentos', ax=ax[0])
+ax[0].set_title('Distribución de ingresos por segmentos en 2024')
+ax[0].set_xlabel('Segmentos')
+ax[0].set_ylabel('Ingresos')
+
+# Plotear boxplot para ingresos_2025 en ax[1,0]
+# Here we assign the data we are plotting on each sub-plot
+df.boxplot(column='ingresos_2025', by='segmentos', ax=ax[1])
+ax[1].set_title('Distribución de ingresos por segmentos en 2025')
+ax[1].set_xlabel('Segmentos')
+ax[1].set_ylabel('Ingresos')
+
+# Ajustar el layout
+plt.tight_layout()
+
+# Mostrar gráficos
+plt.show()
+```
 
 ## Arrays in bigquery and sql
 
