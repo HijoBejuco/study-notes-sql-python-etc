@@ -153,7 +153,7 @@ df = pd.DataFrame(data)
 # we want to create a matrix of plots, or just one column,
 # or just one row or an n x n plot. In this case, we just
 # need 2 rows and 1 column (2, 1) matrix.
-fig, ax = plt.subplots(2, 1)
+fig, ax = plt.subplots(2, 1, figsize=(10, 8))
 
 # Plotear boxplot para ingresos_2024 en ax[0,0]
 # Here we assign the data we are plotting on each sub-plot
@@ -161,6 +161,10 @@ df.boxplot(column='ingresos_2024', by='segmentos', ax=ax[0])
 ax[0].set_title('Distribución de ingresos por segmentos en 2024')
 ax[0].set_xlabel('Segmentos')
 ax[0].set_ylabel('Ingresos')
+# Rotate x-axis tick labels for the first subplot
+ax[0].set_xticklabels(ax[0].get_xticklabels(), rotation=90)
+# plot limits
+ax[0].set_ylim(0, 0.2e8)
 
 # Plotear boxplot para ingresos_2025 en ax[1,0]
 # Here we assign the data we are plotting on each sub-plot
@@ -168,6 +172,10 @@ df.boxplot(column='ingresos_2025', by='segmentos', ax=ax[1])
 ax[1].set_title('Distribución de ingresos por segmentos en 2025')
 ax[1].set_xlabel('Segmentos')
 ax[1].set_ylabel('Ingresos')
+# Rotate x-axis tick labels for the first subplot
+ax[1].set_xticklabels(ax[1].get_xticklabels(), rotation=90)
+# plot limits
+ax[1].set_ylim(0, 0.2e8)
 
 # Ajustar el layout
 plt.tight_layout()
