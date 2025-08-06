@@ -59,6 +59,9 @@
     </ul>
   </li>
   <li>
+    <a href="#cloud-computing">Cloud computing</a>
+  </li>
+  <li>
     <a href="#gunicorn">Gunicorn</a>
   </li>
 </ol>
@@ -375,7 +378,7 @@ rag_chain.invoke({
 * Notebook for creating a RAG using LangChain is here: *deep_learning/generative_ai_with_langchain/rag_generation_langchain.ipynb*
 
 
-
+## Cloud computing
 
 
 ## Gunicorn
