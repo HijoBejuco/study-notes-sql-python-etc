@@ -268,14 +268,17 @@ Companies use ML to solve the prediction problem of recommending products to cli
 #### **Natural experiments:**
 Natural experiments are used when we dont want to conduct a randomized control trial in a lab. 
 
-**Example:**
+**Example:** 
 
-* If we want to asses the effect of pollution on health 
+If we want to asses the effect of pollution on health, we couldnt compare between people from cities to rural areas, because there could be drastic differences between those two populations, because they **eat, move, work, etc... very differently.**, it is also not possible to conduct this in a laboratory, because its not possible to poisson a group of humans to test whether their health is affected by pollution. 
 
+To solve this problem, we can resort to a **natural experiment:** In the Beijing olimpic games, they decided to lower pollution, shutting down power plants and limiting car use, allowed researchers to observe the same population before, during, and after a sudden drop in pollution levels.
 
-**References of this section:**
-* Basically all the amazing visualizations and theories of this section are taken from: [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
-* 
+#### **How to challenge causality? main drawbacks:**
+
+**References of this section:** Basically all the amazing visualizations and theories of this section are taken from: 
+* [Why Machine Learning Is Not Made for Causal Estimation](https://towardsdatascience.com/why-machine-learning-is-not-made-for-causal-estimation-f2add4a36e85)
+* [The Science and Art of Causality (part 1)](https://medium.com/data-science/the-science-and-art-of-causality-part-1-5d6fb55b7a7c)
 
 
 
