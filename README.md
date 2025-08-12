@@ -222,7 +222,7 @@ This is an Aggregating function, so it aggregates all the values using a group b
 * But ML can be used in some cases as a tool for studying causalities (Causal ML)
 
 #### **Predictive inference:**
-Prediction based on correlations like ML, here we predict something, based on the values of other variables. Here the objective is to predict the objective variable the best we can. 
+Prediction based on correlations like ML: here we predict something, based on the values of other variables. Here the objective is to predict the objective variable the best we can. 
 
 #### **Causal inference**
 aims to measure the value of the outcome when you change the value of something else, everything else equal. 
@@ -232,7 +232,7 @@ Here the quality of the prediction is not the most important objective, it's pos
 **Counterfactual:** is the world where we don't make the intervention, so we can compare both worlds (the one with intervention and the one without)
 * The comparison with the 2 worlds is the **Causal effect**
 
-**Counterfactual example**
+**Counterfactual example:**
 
 Imagine you have a headache, then you take a pill, and later, the headache is gone. But was it because the pill? or something else like a tea or a bottle of water? Its impossible to know which factor helped as all those effects are confounded. The only way to answer this perfectly, would be to have two parallel worlds, where in one world you take the pill and in the other dont. *As the pill is the only difference between the two situations*, it would allow you to claim that it was the cause. But obviously, we do not have parallel worlds to play with. In causal inference, we call this: ***The fundamental problem of causal inference***.
 
@@ -262,9 +262,15 @@ Imagine interpreting the positive association between ice cream sales and drowni
 Another example: During pandemic, a French "expert" used a graph to argue that lockdowns were counterproductive, showing a positive correlation between lockdown stringency and Covid-related deaths. However, this was likely due to reverse causation: countries imposed strict measures when deaths were high. Proper analysis, controlling for confounders, showed that lockdowns had a strong negative effect on the number of cases and deaths.
 
 #### **How can causal and predictive inference be used together?**
-Companies use ML to solve the prediction problem of recommending products to clients. However, to understand the effect of the recommendation system on sales or conversions, causal inference is needed. This involves conducting  andomized experiments (A/B testing) to determine the impact accurately. 
+Companies use ML to solve the prediction problem of recommending products to clients. However, to understand the effect of the recommendation system on sales or conversions, causal inference is needed. This involves conducting  randomized experiments (A/B testing) to determine the impact accurately. 
 * tests evaluating both scenarios, when ML is used and when dont, and with this information, performing statistical tests to see whether ML improve conversion. 
 
+#### **Natural experiments:**
+Natural experiments are used when we dont want to conduct a randomized control trial in a lab. 
+
+**Example:**
+
+* If we want to asses the effect of pollution on health 
 
 
 **References of this section:**
